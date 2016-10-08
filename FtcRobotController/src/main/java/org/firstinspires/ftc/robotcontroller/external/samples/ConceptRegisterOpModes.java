@@ -38,6 +38,8 @@ import com.qualcomm.robotcore.eventloop.opmode.OpModeManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeRegistrar;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
+import junit.framework.TestSuite;
+
 import org.firstinspires.ftc.robotcontroller.external.samples.*;
 
 /**
@@ -77,7 +79,7 @@ public class ConceptRegisterOpModes
     // manager.register("Linear Opmode",          TemplateOpMode_Linear.class);
 
     // Driving Samples
-    // manager.register("Teleop POV",             PushbotTeleopPOV_Linear.class);
+   //  manager.register("TeleopPOV_Linear",             TeleopPOV_Linear.class);
     // manager.register("Teleop Tank",            PushbotTeleopTank_Iterative.class);
     // manager.register("Auto Drive Gyro",        PushbotAutoDriveByGyro_Linear.class);
     // manager.register("Auto Drive Encoder",     PushbotAutoDriveByEncoder_Linear.class);

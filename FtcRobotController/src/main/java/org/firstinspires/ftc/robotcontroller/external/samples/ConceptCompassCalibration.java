@@ -32,12 +32,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 package org.firstinspires.ftc.robotcontroller.external.samples;
 
-import com.qualcomm.ftccommon.DbgLog;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.CompassSensor;
-import com.qualcomm.robotcore.hardware.LightSensor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 /**
@@ -98,8 +96,8 @@ public class ConceptCompassCalibration extends LinearOpMode {
         // Start the robot rotating clockwise
         telemetry.addData("Compass", "Calibration mode. Turning the robot...");
         telemetry.update();
-        robot.leftMotor.setPower(MOTOR_POWER);
-        robot.rightMotor.setPower(-MOTOR_POWER);
+        robot.leftfrontMotor.setPower(MOTOR_POWER);
+        robot.rightfrontMotor.setPower(-MOTOR_POWER);
 
         // run until time expires OR the driver presses STOP;
         runtime.reset();
@@ -109,8 +107,8 @@ public class ConceptCompassCalibration extends LinearOpMode {
         }
 
         // Stop all motors and turn off claibration
-        robot.leftMotor.setPower(0);
-        robot.rightMotor.setPower(0);
+        robot.leftfrontMotor.setPower(0);
+        robot.rightfrontMotor.setPower(0);
         compass.setMode(CompassSensor.CompassMode.MEASUREMENT_MODE);
         telemetry.addData("Compass", "Returning to measurement mode");
         telemetry.update();
